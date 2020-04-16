@@ -182,5 +182,3 @@ end
 def console
   $console ||= Console.new
 end
-
-console.dot
