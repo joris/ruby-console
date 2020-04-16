@@ -23,7 +23,7 @@ class Console
     end
     if logger.kind_of?(IO)
       begin
-        result = logger.send(:print, text&.to_s&.force_encoding("UTF-8"))
+        result = logger.send(:print, text&.dup&.to_s&.force_encoding("UTF-8"))
         $stdout.send(:print, text) unless logger == $stdout
         if logger.kind_of?(File)
           logger.send(:flush)

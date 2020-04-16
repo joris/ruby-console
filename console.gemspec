@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "console"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.date        = "2020-04-16"
   s.summary     = "Ruby Console"
   s.description = "A straightforward command line output writer"
